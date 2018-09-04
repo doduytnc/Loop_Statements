@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game doan so</title>
+</head>
+<body>
+<input type="button" value="PLAY" onclick="doanSo()">
+<script>
+    function doanSo() {
+       var a,b,c,d,e;
+    alert("Ban hay chon khoang so muon doan");
+    a = parseInt(prompt("Tu so"));
+    b = parseInt(prompt("den so"));
+    c = Math.floor(Math.random() * (b - a) +a);
+    alert(c);
+
+for (i = 1; i <= 3; i++) {
+    d = parseInt(prompt("Hay nhap so ban doan"));
+    if (d === c) {
+        alert("Ban da doan chinh xac!");
+        break;
+    }
+}
+    }
+</script>
+</body>
+</html>

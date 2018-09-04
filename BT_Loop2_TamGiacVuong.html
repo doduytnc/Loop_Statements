@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In tam giac vuong</title>
+</head>
+<body>
+<script>
+    var i, j;
+    d = prompt("Hay nhap vao do dai canh hinh vuong")
+    for (i = 1; i <= d ; i++) {
+        for (j = 1 ; j <= i ; j++) {
+            document.write("*");
+        }
+document.write("<br>")
+    }
+
+    document.write("<br>");
+
+    //tam giac nguoc
+    for (i = 1; i <=d  ; i++) {
+        for (j = d ; j >= i ; j--) {
+            document.write("*");
+        }
+        document.write("<br>")
+    }
+
+    //Tam giac vuong xuoi can le phai
+    for (i = 1; i <= d ; i++) {
+        if (i < d) {
+            document.write(" ");
+        } else {
+            document.write("*");
+        }
+    }
+
+</script>
+</body>
+</html>
